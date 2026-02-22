@@ -19,6 +19,6 @@ The Verdict: We are paying 10x more for customers in our "high-spend" campaign t
 The math proves Campaign 1178 is an objective failure compared to the smaller, more efficient targets.
 
 ### 📂 How to use this repo
-* [**/SQL**](./sql): BigQuery transformation scripts using CTEs and Window Functions.
+* [**/SQL**](sql/campaign_audit.sql): BigQuery transformation scripts using CTEs and Window Functions.
 * [**/Data**](./Data): The three optimized CSVs exported from BigQuery.
 * [**/Dashboard**](https://public.tableau.com/app/profile/rotem.ben.moyal/viz/Project_Precision_FB_Campaign_Audit/Dashboard1): View the interactive dashboard on Tableau Public.
