@@ -1,10 +1,14 @@
 # Facebook-Ad-Spend-Forensic-Audit
-Facebook Ad performance across 454 interest segments. Includes a dynamic ROAS simulator using Tableau parameters to identify budget waste and a 923% efficiency gap between scaling and testing campaigns
- The Project at a Glance
-I took messy raw dataset from Kaggle and performed analysis to find where marketing budgets go to die. This wasn't just about making charts; it was about cleaning data at scale and finding a "smoking gun" in the efficiency metrics.
 
-The Technical Workflow
-Extraction: Pulled raw Facebook ad performance data from Kaggle.
+Data Source: Raw ad-spend data from Kaggle (xyz_ad_campaign).
+
+ETL Pipeline: Performed data transformation in Google BigQuery. Used CTEs to aggregate performance metrics and Window Functions (RANK(), MAX() OVER) to identify statistical outliers in campaign efficiency.
+
+Calculated Logic: Implemented a dynamic ROAS (Return on Ad Spend) calculation using Tableau Parameters. This allows for real-time profitability simulation based on variable product price points—a critical feature for stakeholders when the final COGS (Cost of Goods Sold) is fluid.
+
+The Findings: Isolated a specific demographic segment (Female 45-49) in Campaign 1178 where CPA was 923% higher than the baseline established by the top-performing campaign (916).
+This wasn't just about making charts; it was about cleaning data at scale and finding efficiency metrics.
+
 
 Analysis (SQL/BigQuery): I used BigQuery to aggregate over 450 interest segments, calculate Cost Per Sale (CPS) across demographics, and isolate the top/bottom performers. I exported this into three surgical CSV files for visualization.
 
