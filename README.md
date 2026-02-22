@@ -16,11 +16,9 @@ The Hidden Gem: Campaign 916 is getting sales for just $6.24.
 
 The Verdict: We are paying 10x more for customers in our "high-spend" campaign than in our tests. Most of this waste is concentrated in the Female 45-49 demographic.
 
-The Revelation: No matter the price, the math proves Campaign 1178 is an objective failure compared to the smaller, more efficient targets.
+The math proves Campaign 1178 is an objective failure compared to the smaller, more efficient targets.
 
- How to use this repo
-/SQL: (Optional: Add your BigQuery queries here!)
-
-/Data: The three optimized CSVs exported from BigQuery.
-
-[/Dashboard: The final .twbx file.](https://public.tableau.com/app/profile/rotem.ben.moyal/viz/Project_Precision_FB_Campaign_Audit/Dashboard1)
+### 📂 How to use this repo
+* [**/SQL**](./sql): BigQuery transformation scripts using CTEs and Window Functions.
+* [**/Data**](./Data): The three optimized CSVs exported from BigQuery.
+* [**/Dashboard**](https://public.tableau.com/app/profile/rotem.ben.moyal/viz/Project_Precision_FB_Campaign_Audit/Dashboard1): View the interactive dashboard on Tableau Public.
